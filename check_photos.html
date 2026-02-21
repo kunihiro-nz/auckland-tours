@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Helper</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .filename {
+            word-break: break-all;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>画像ファイル確認用ページ</h1>
+    <p>どのファイルがどの写真か確認するために、このページを見てファイル名を教えてください（例：「2026...jpgは車の正面です」など）。</p>
+    <div class="grid">
+        <div class="item"><img src="assets/20260209_150846.jpg">
+            <div class="filename">20260209_150846.jpg</div>
+        </div>
+        <div class="item"><img src="assets/20260214_111020.jpg">
+            <div class="filename">20260214_111020.jpg</div>
+        </div>
+        <div class="item"><img src="assets/20260214_122343.jpg">
+            <div class="filename">20260214_122343.jpg</div>
+        </div>
+        <div class="item"><img src="assets/20260214_122413.jpg">
+            <div class="filename">20260214_122413.jpg</div>
+        </div>
+        <div class="item"><img src="assets/20260214_122455.jpg">
+            <div class="filename">20260214_122455.jpg</div>
+        </div>
+        <div class="item"><img src="assets/20260214_122621.jpg">
+            <div class="filename">20260214_122621.jpg</div>
+        </div>
+        <div class="item"><img src="assets/be4f55a9-8a52-4995-ab1f-2a0339069a77.jpg">
+            <div class="filename">be4f55a9...jpg</div>
+        </div>
+        <div class="item"><img src="assets/f56e1d26-2fcc-4af7-a117-092710546a3b.jpg">
+            <div class="filename">f56e1d26...jpg</div>
+        </div>
+        <div class="item"><img src="assets/unnamed.jpg">
+            <div class="filename">unnamed.jpg</div>
+        </div>
+    </div>
+</body>
+
+</html>
