@@ -119,7 +119,7 @@ h6 {
     color: var(--primary-color);
 }
 
-.btn-other-services {
+a.btn-other-services {
     background: transparent;
     border: 2px solid var(--white);
     color: var(--white);
@@ -129,7 +129,7 @@ h6 {
     transition: all 0.3s;
 }
 
-.btn-other-services:hover {
+a.btn-other-services:hover {
     background: var(--white);
     color: var(--primary-color);
 }
@@ -871,3 +871,4 @@ h6 {
         grid-column: 1 / -1;
     }
 }
+
