@@ -119,6 +119,21 @@ h6 {
     color: var(--primary-color);
 }
 
+.btn-other-services {
+    background: transparent;
+    border: 2px solid var(--white);
+    color: var(--white);
+    padding: 10px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn-other-services:hover {
+    background: var(--white);
+    color: var(--primary-color);
+}
+
 /* Mobile Menu */
 .mobile-menu-btn {
     display: none;
@@ -244,6 +259,7 @@ h6 {
     padding: 14px 32px;
     font-size: 1.1rem;
 }
+
 
 /* Sections General */
 .section {
