@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kuniのおすすめグッズ。ニュージーランド旅行や車内で役立つ便利なアイテムをご紹介します。">
+    <title>他サービス - おすすめグッズ | Kuni NZ Tours</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-header {
+            padding-top: 110px;
+            padding-bottom: 30px;
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+            margin-bottom: 40px;
+        }
+        .page-title {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        .page-subtitle {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+        .wishlist-section {
+            padding-bottom: 40px;
+        }
+        
+        .wishlist-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .wishlist-card {
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(0,0,0,0.05);
+            text-decoration: none;
+            color: var(--text-dark);
+        }
+        
+        .wishlist-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+        
+        .wishlist-image-wrapper {
+            overflow: hidden;
+            border-radius: 20px 20px 0 0;
+            background: #f0f4f8;
+        }
+        
+        .wishlist-image {
+            height: 220px;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.6s ease;
+        }
+        
+        .wishlist-card:hover .wishlist-image {
+            transform: scale(1.08);
+        }
+        
+        .wishlist-content {
+            padding: 30px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .wishlist-title {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .wishlist-desc {
+            color: #666;
+            margin-bottom: 25px;
+            flex-grow: 1;
+        }
+        
+        .amazon-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: #ff9900;
+            color: #111;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s;
+            margin-top: auto;
+            border: 2px solid #ff9900;
+        }
+        
+        .wishlist-card:hover .amazon-btn {
+            background: #e68a00;
+            border-color: #e68a00;
+        }
+        
+        .amazon-btn i {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" style="text-decoration: none;"><h1 class="logo">Kuni NZ Tours</h1></a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html#about">プロフィール</a></li>
+                    <li><a href="index.html#services">サービス</a></li>
+                    <li><a href="index.html#special">特別プラン</a></li>
+                    <li><a href="index.html#vehicle">車両・料金</a></li>
+                    <li><a href="other-services.html" style="color: var(--secondary-color);">他サービス</a></li>
+                    <li><a href="privacy-policy.html">プライバシーポリシー</a></li>
+                    <li><a href="index.html#contact" class="btn-primary">お問い合わせ</a></li>
+                </ul>
+                <button class="mobile-menu-btn" aria-label="メニューを開く">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="index.html#about">プロフィール</a></li>
+            <li><a href="index.html#services">サービス</a></li>
+            <li><a href="index.html#special">特別プラン</a></li>
+            <li><a href="index.html#vehicle">車両・料金</a></li>
+            <li><a href="other-services.html">他サービス</a></li>
+            <li><a href="privacy-policy.html">プライバシーポリシー</a></li>
+            <li><a href="index.html#contact">お問い合わせ</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <div class="page-header">
+            <div class="container">
+                <h2 class="page-title">おすすめグッズ</h2>
+                <p class="page-subtitle">Kuniが厳選した、ニュージーランド旅行や車内で役立つ便利なアイテムをご紹介します。</p>
+            </div>
+        </div>
+
+        <section class="section wishlist-section">
+            <div class="container">
+                <div class="wishlist-grid">
+                    <!-- Wishlist 1 -->
+                    <a href="https://www.amazon.jp/hz/wishlist/ls/34LPF9MPG0SC0?ref_=wl_share" target="_blank" rel="noopener noreferrer" class="wishlist-card car">
+                        <div class="wishlist-image-wrapper">
+                            <div class="wishlist-image" style="background-image: url('assets/car_goods.jpg');"></div>
+                        </div>
+                        <div class="wishlist-content">
+                            <h3 class="wishlist-title">Kuniのおすすめ車内グッズ</h3>
+                            <p class="wishlist-desc">長時間のドライブをより快適にする、車内で役立つ便利なアイテムをまとめました。レンタカーでのご旅行にもおすすめです。</p>
+                            <span class="amazon-btn">
+                                <i class="fab fa-amazon"></i> Amazonで見る
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- Wishlist 2 -->
+                    <a href="https://www.amazon.jp/hz/wishlist/ls/DD13E1T4S48R?ref_=wl_share" target="_blank" rel="noopener noreferrer" class="wishlist-card travel">
+                        <div class="wishlist-image-wrapper">
+                            <div class="wishlist-image" style="background-image: url('assets/travel_goods.jpg');"></div>
+                        </div>
+                        <div class="wishlist-content">
+                            <h3 class="wishlist-title">kuniのおすすめ旅行グッズ</h3>
+                            <p class="wishlist-desc">ニュージーランド旅行をより楽しく、快適にするためのマストアイテムを厳選しました。パッキングの参考にしてください。</p>
+                            <span class="amazon-btn">
+                                <i class="fab fa-amazon"></i> Amazonで見る
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p style="font-size: 0.85rem; opacity: 0.8; margin-bottom: 10px;">Amazonのアソシエイトとして、Kuni NZ toursは適格販売により収入を得ています。</p>
+            <p>&copy; 2024 Kuni NZ Tours. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
